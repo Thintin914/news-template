@@ -64,6 +64,8 @@ function App() {
           <p className=' underline'>https://git-fork.com/</p>
           <p className=' underline'>https://vercel.com/</p>
           <p className=' underline'>https://recharts.org/en-US/examples/SimpleLineChart</p>
+          <p className=' font-mono'>npm i</p>
+          <p className=' font-mono'>npm run start</p>
         </div>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur, mi eget tincidunt suscipit, tellus orci venenatis turpis, quis condimentum nibh lacus id justo. Nulla posuere tellus non consectetur sodales. Cras ut est laoreet, faucibus tellus et, tempus sem. Ut sit amet lacus cursus, tempor dolor a, congue orci. Integer tempus rhoncus rutrum. Fusce efficitur lacus quis diam bibendum egestas. Pellentesque eget eros id eros scelerisque faucibus non ac ligula.</p>
