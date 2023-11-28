@@ -166,7 +166,7 @@ export function BarChartStackedBySign(props: {width: number}) {
   return (
     <BarChart
       width={props.width}
-      barCategoryGap={props.width > 768 ? 10 : 18}
+      barCategoryGap={10}
       height={600}
       data={data}
       stackOffset="sign"
