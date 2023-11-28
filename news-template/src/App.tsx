@@ -5,6 +5,7 @@ import { BarChartStackedBySign} from './BarChartStackedBySign';
 import { SimpleLineChart } from './SimpleLineChart';
 import { SimplePieChart } from './SimplePieChart';
 import { FadeInParagraph } from './FadeInParagraph';
+import { BottomDeco, BottomRightDeco, LeftDeco, RightDeco, TopRightDeco } from './utils/LineDeco';
 
 function App() {
 
@@ -57,14 +58,30 @@ function App() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur, mi eget tincidunt suscipit, tellus orci venenatis turpis, quis condimentum nibh lacus id justo. Nulla posuere tellus non consectetur sodales. Cras ut est laoreet, faucibus tellus et, tempus sem. Ut sit amet lacus cursus, tempor dolor a, congue orci. Integer tempus rhoncus rutrum. Fusce efficitur lacus quis diam bibendum egestas. Pellentesque eget eros id eros scelerisque faucibus non ac ligula.</p>
         
         <p className=' text-3xl text-center w-full font-semibold'>Donec eu faucibus ante</p>
+        <div className=' w-full relative flex justify-center items-center'>
+          <BottomDeco bottom={0} />
+        </div>
 
         <FadeInParagraph text="Ut eu vehicula massa, vitae interdum massa. Phasellus eget lorem sollicitudin, iaculis est vel, suscipit sapien. Nam eu fringilla urna. Nulla elementum, urna at cursus tempor, ex mi pulvinar odio, at condimentum sapien eros ut urna. Nam a massa tellus. Donec et eleifend arcu. Sed sit amet ante arcu. Nulla porta, elit lacinia pellentesque elementum, ex metus aliquam nibh, ut mattis urna diam non lacus. Maecenas vel pellentesque lacus. Sed tristique nisl vestibulum magna efficitur, ut efficitur erat suscipit. Nam vitae leo in erat vulputate vulputate eu ut massa. Sed ut tortor eu sem vehicula pharetra sed eu risus. Vivamus tempus metus at lectus ultrices, at rhoncus risus sodales. Proin finibus, leo vel condimentum posuere, risus odio sagittis sem, eu ornare nibh nibh sed nibh. Maecenas viverra diam ut massa malesuada, id gravida turpis pellentesque." />
+        
+        <div className=' w-full relative flex justify-center items-center'>
+          <LeftDeco left={-30} top={0} />
+        </div>
+
         <FadeInParagraph text="Sed lacus lorem, bibendum at magna id, tempor convallis ipsum. Proin convallis placerat sem. Nam et eros in ligula vehicula bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula tellus a dolor consectetur maximus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis molestie placerat sollicitudin. Cras at urna consequat, varius massa vitae, faucibus sem. Sed auctor leo nulla, sed lacinia dui cursus et. Praesent quis ex blandit, hendrerit augue nec, rutrum sapien. Nullam et magna quis sem aliquet lobortis sit amet ac enim."/>
         
+
+        <div className=' w-full relative flex justify-center items-center'>
+          <TopRightDeco right={-30} top={0} />
+        </div>
         <p className=' text-3xl text-left w-full font-semibold'>Donec eu faucibus ante</p>
         
         <p>Nullam lectus elit, viverra at dignissim vitae, hendrerit mattis ligula. Praesent sit amet scelerisque lectus. Ut scelerisque sem leo, ac lobortis mauris viverra sit amet. Sed sed purus quis nisl auctor cursus. Ut convallis vel risus pharetra bibendum. Ut eu lectus eros. Suspendisse semper tellus nec lectus viverra aliquam. Etiam blandit lorem sit amet risus suscipit pretium. Ut mattis pellentesque nibh, a tempus nisi dapibus ut.</p>
         <p>Aenean suscipit eros eu placerat pulvinar. Pellentesque a porta orci, nec sollicitudin erat. Nullam sem odio, scelerisque sit amet metus eu, sagittis consectetur tellus. Morbi laoreet arcu et sapien semper semper. Aliquam accumsan nec justo in hendrerit. Maecenas eget augue sit amet dolor facilisis pulvinar. Ut cursus, nunc in cursus condimentum, ante justo luctus tellus, sed mattis libero tortor non arcu. Proin libero tortor, pulvinar at nulla a, faucibus auctor enim.</p>
+        
+        <div className=' w-full relative flex justify-center items-center'>
+          <LeftDeco left={-30} top={0} />
+        </div>
         <p>Mauris feugiat hendrerit dolor, sed volutpat nisi elementum id. Nulla tristique, magna pellentesque egestas vulputate, lectus dolor ultrices eros, sed tincidunt felis tellus et orci. Cras ut ultrices felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eu faucibus ante. Ut faucibus molestie sem, at auctor urna ultrices ut. Pellentesque imperdiet nisi leo, vel porta nisi convallis vel. Ut mauris ante, hendrerit vel congue sit amet, placerat sed dolor.</p>
 
         <div className='w-full flex justify-center items-center'>
@@ -74,8 +91,7 @@ function App() {
           </video>
         </div>
         
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur, mi eget tincidunt suscipit, tellus orci venenatis turpis, quis condimentum nibh lacus id justo. Nulla posuere tellus non consectetur sodales. Cras ut est laoreet, faucibus tellus et, tempus sem. Ut sit amet lacus cursus, tempor dolor a, congue orci. Integer tempus rhoncus rutrum. Fusce efficitur lacus quis diam bibendum egestas. Pellentesque eget eros id eros scelerisque faucibus non ac ligula.</p>
+        <FadeInParagraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur, mi eget tincidunt suscipit, tellus orci venenatis turpis, quis condimentum nibh lacus id justo. Nulla posuere tellus non consectetur sodales. Cras ut est laoreet, faucibus tellus et, tempus sem. Ut sit amet lacus cursus, tempor dolor a, congue orci. Integer tempus rhoncus rutrum. Fusce efficitur lacus quis diam bibendum egestas. Pellentesque eget eros id eros scelerisque faucibus non ac ligula.' />
         <p>Ut eu vehicula massa, vitae interdum massa. Phasellus eget lorem sollicitudin, iaculis est vel, suscipit sapien. Nam eu fringilla urna. Nulla elementum, urna at cursus tempor, ex mi pulvinar odio, at condimentum sapien eros ut urna. Nam a massa tellus. Donec et eleifend arcu. Sed sit amet ante arcu.</p>
         <p>Nulla porta, elit lacinia pellentesque elementum, ex metus aliquam nibh, ut mattis urna diam non lacus. Maecenas vel pellentesque lacus. Sed tristique nisl vestibulum magna efficitur, ut efficitur erat suscipit. Nam vitae leo in erat vulputate vulputate eu ut massa. Sed ut tortor eu sem vehicula pharetra sed eu risus.</p>
         
@@ -102,6 +118,9 @@ function App() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur, mi eget tincidunt suscipit, tellus orci venenatis turpis, quis condimentum nibh lacus id justo. Nulla posuere tellus non consectetur sodales. Cras ut est laoreet, faucibus tellus et, tempus sem. Ut sit amet lacus cursus, tempor dolor a, congue orci.</p>
         <p>Integer tempus rhoncus rutrum. Fusce efficitur lacus quis diam bibendum egestas. Pellentesque eget eros id eros scelerisque faucibus non ac ligula.</p>
         <p>Aenean suscipit eros eu placerat pulvinar. Pellentesque a porta orci, nec sollicitudin erat. Nullam sem odio, scelerisque sit amet metus eu, sagittis consectetur tellus. Morbi laoreet arcu et sapien semper semper. Aliquam accumsan nec justo in hendrerit. Maecenas eget augue sit amet dolor facilisis pulvinar. Ut cursus, nunc in cursus condimentum, ante justo luctus tellus, sed mattis libero tortor non arcu. Proin libero tortor, pulvinar at nulla a, faucibus auctor enim. Mauris feugiat hendrerit dolor, sed volutpat nisi elementum id. Nulla tristique, magna pellentesque egestas vulputate, lectus dolor ultrices eros, sed tincidunt felis tellus et orci. Cras ut ultrices felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eu faucibus ante. Ut faucibus molestie sem, at auctor urna ultrices ut. Pellentesque imperdiet nisi leo, vel porta nisi convallis vel. Ut mauris ante, hendrerit vel congue sit amet, placerat sed dolor.</p>
+        <div className=' w-full relative flex justify-center items-center'>
+          <BottomRightDeco bottom={0} right={-30} />
+        </div>
 
         <div className=' w-full flex flex-col md:flex-row justify-start items-start'>
           <div className='w-full md:w-1/2 flex flex-col justify-start items-start text-center font-semibold'>
@@ -161,9 +180,15 @@ function App() {
         </div>
         
         <p>Sed lacus lorem, bibendum at magna id, tempor convallis ipsum. Proin convallis placerat sem. Nam et eros in ligula vehicula bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula tellus a dolor consectetur maximus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis molestie placerat sollicitudin. Cras at urna consequat, varius massa vitae, faucibus sem. Sed auctor leo nulla, sed lacinia dui cursus et. Praesent quis ex blandit, hendrerit augue nec, rutrum sapien. Nullam et magna quis sem aliquet lobortis sit amet ac enim.</p>
+        
+        <div className=' w-full relative flex justify-center items-center'>
+          <RightDeco right={-30} top={0} />
+        </div>
         <p>Nullam lectus elit, viverra at dignissim vitae, hendrerit mattis ligula. Praesent sit amet scelerisque lectus. Ut scelerisque sem leo, ac lobortis mauris viverra sit amet. Sed sed purus quis nisl auctor cursus. Ut convallis vel risus pharetra bibendum. Ut eu lectus eros. Suspendisse semper tellus nec lectus viverra aliquam. Etiam blandit lorem sit amet risus suscipit pretium. Ut mattis pellentesque nibh, a tempus nisi dapibus ut.</p>
         <p>Aenean suscipit eros eu placerat pulvinar. Pellentesque a porta orci, nec sollicitudin erat. Nullam sem odio, scelerisque sit amet metus eu, sagittis consectetur tellus. Morbi laoreet arcu et sapien semper semper. Aliquam accumsan nec justo in hendrerit. Maecenas eget augue sit amet dolor facilisis pulvinar. Ut cursus, nunc in cursus condimentum, ante justo luctus tellus, sed mattis libero tortor non arcu. Proin libero tortor, pulvinar at nulla a, faucibus auctor enim.</p>
-       
+        <div className=' w-full relative flex justify-center items-center'>
+          <BottomDeco bottom={0} />
+        </div>
       </div>
 
       <div className='w-full h-[10vh] relative mt-[20vh]'>
